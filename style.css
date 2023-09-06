@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background: red; */
+}
+
+.wrapper .notes {
+    margin-top: 10vw;
+}
+
+.wrapper .notes .notes-input {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+.notes-input input[type=text]{
+    width: 30vw;
+    height: 3.5rem;
+    font-size: inherit;
+    border-radius: 50px;
+}
+
+.notes-input input[type=submit]{
+    width: 10vw;
+    height: 3.5rem;
+    font-size: inherit;
+    border-radius: 20px;
+    border: none;
+    background: #70eeff;
+    color: white;
+}
+
+.notes-input input[type=submit]:hover {
+    background: #383bff;
+    cursor: pointer;
+}
