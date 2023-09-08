@@ -6,7 +6,8 @@ submit.addEventListener("click", () => {
     const text = document.getElementById("task").value;
 
     if (text.trim() !== "") {
-        const noteElement = document.createElement("p");
+        const noteElement = document.createElement("div");
+        const notesList = document.createElement("p");
         noteElement.textContent = text;
 
         const deleteButton = document.createElement("button");
