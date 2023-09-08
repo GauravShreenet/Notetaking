@@ -12,7 +12,8 @@ submit.addEventListener("click", () => {
         noteElement.textContent = text;
 
         const deleteButton = document.createElement("button");
-            deleteButton.textContent = "Delete";
+            deleteButton.textContent = "X";
+            deleteButton.className = "flex"
             deleteButton.addEventListener("click", () => {
                 // Remove the parent element (the entire note) when the delete button is clicked
                 noteList.removeChild(noteElement);

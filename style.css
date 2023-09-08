@@ -7,6 +7,19 @@ body {
     font-size: 2rem;
 }
 
+button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+    background: red;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
     gap: 3rem;
