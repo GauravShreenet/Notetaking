@@ -7,6 +7,7 @@ submit.addEventListener("click", () => {
 
     if (text.trim() !== "") {
         const noteElement = document.createElement("div");
+        noteElement.className = "flex"
         const notesList = document.createElement("p");
         noteElement.textContent = text;
 
@@ -14,14 +15,14 @@ submit.addEventListener("click", () => {
             deleteButton.textContent = "Delete";
             deleteButton.addEventListener("click", () => {
                 // Remove the parent element (the entire note) when the delete button is clicked
-                notesList.removeChild(noteElement);
+                noteList.removeChild(notesList);
             });
-
+            
+            noteElement.appendChild(notesList);
+            noteElement.appendChild(deleteButton);
         
-        noteList.appendChild(noteElement);
-        noteList.appendChild(deleteButton);
-        
-        document.getElementById("task").value = "";
-    }
+            noteList.appendChild(noteElement);       
+            document.getElementById("task").value = "";
+        }
     
 });
