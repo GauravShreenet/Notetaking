@@ -34,6 +34,7 @@ body {
 .notes-input input[type=text]{
     width: 30vw;
     height: 3.5rem;
+    padding-left: 25px;
     font-size: inherit;
     border-radius: 50px;
 }

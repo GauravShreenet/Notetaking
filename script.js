@@ -18,7 +18,8 @@ submit.addEventListener("click", () => {
 
         
         noteList.appendChild(noteElement);
-        noteList.appendChild(deleteButton)
+        noteList.appendChild(deleteButton);
+        
         document.getElementById("task").value = "";
     }
     
