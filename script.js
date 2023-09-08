@@ -15,7 +15,7 @@ submit.addEventListener("click", () => {
             deleteButton.textContent = "Delete";
             deleteButton.addEventListener("click", () => {
                 // Remove the parent element (the entire note) when the delete button is clicked
-                noteList.removeChild(notesList);
+                noteList.removeChild(noteElement);
             });
             
             noteElement.appendChild(notesList);
