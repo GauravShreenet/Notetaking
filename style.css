@@ -61,3 +61,7 @@ button:hover {
     background: #383bff;
     cursor: pointer;
 }
+
+.completed {
+    text-decoration: line-through;
+}

@@ -39,6 +39,17 @@ submit.addEventListener("click", () => {
                 noteList.removeChild(noteElement);
             });
 
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.addEventListener("change", () => {
+                if (checkbox.checked) {
+                    notesList.classList.add("completed");
+                } else {
+                    notesList.classList.remove("completed");
+                }
+            });
+
+            noteElement.appendChild(checkbox);
             noteElement.appendChild(notesList);
             noteElement.appendChild(editButton);
             noteElement.appendChild(deleteButton);
