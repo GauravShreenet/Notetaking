@@ -2,11 +2,21 @@
 const submit = document.getElementById("submit");
 const noteList = document.querySelector(".notelist");
 const taskInput = document.getElementById("task");
+let editMode = false;
+let editeNote = null;
 
 submit.addEventListener("click", () => {
-    const text = document.getElementById("task").value;
+    const text = taskInput.value;  
 
     if (text.trim() !== "") {
+        if(editMode && editeNote){
+            editeNote.querySelector("p").textContent = text;
+            editMode = false;
+            editeNote = null;
+            taskInput.value = "";            
+        }else{
+            
+        }
         const noteElement = document.createElement("div");
         noteElement.className = "flex"
         const notesList = document.createElement("p");
