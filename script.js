@@ -1,6 +1,7 @@
 
 const submit = document.getElementById("submit");
 const noteList = document.querySelector(".notelist");
+const taskInput = document.getElementById("task");
 
 submit.addEventListener("click", () => {
     const text = document.getElementById("task").value;
